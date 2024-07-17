@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoCPT</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>GoCPT</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">FEATURES</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <button class="login" onclick="login_fun()">Log In</button>
+
+                <button class="signup" onclick="signup_fun()">Sign Up</button>
+            </div>
+        </div>
+    </header>
+    
+    <section class="welcome">
+        <h2>Welcome to <span class="highlight">GoCPT BETA</span></h2>
+        <p>Your Path to Effortless CPT Coding!</p>
+        <button class="start-testing" onclick="startTesting()">Start Testing</button>
+    </section>
+    
+    <section class="features">
+        <h2>Key Features of GoCPT BETA</h2>
+        <div class="feature-grid">
+            <div class="feature-box">
+                <h3>User Friendly</h3>
+                <p>The goCPT app offers a user-friendly feature for 
+                    determining CPT codes based on time alone. To utilize
+                    this functionality, simply navigate to the designated 
+                    time button within the app and input the total time 
+                    spent managing the patient during the encounter. The 
+                    app will then generate the appropriate CPT code, 
+                    considering the significant role of time in certain 
+                    scenarios, such as counseling or coordination of care,
+                    in determining the level of service provided</p>
+            </div>
+            <div class="feature-box">
+                <h3>Medical Complexity Assessment</h3>
+                <p>The goCPT app calculates encounters of varying complexity (straightforward/minimal, low, moderate, and high) based on a meticulous assessment of Medical Decision-Making (MDM), taking into account the number of diagnoses, management options, risk of complications or morbidity, and the amount and complexity of data reviewed during the encounter</p>
+            </div>
+            <div class="feature-box">
+                <h3>E&M Code Integration</h3>
+                <p>Seamlessly incorporates the key components influencing E&M code selection, such as History of Present Illness (HPI), Examination, Medical Decision-Making (MDM), and Time considerations.</p>
+            </div>
+            <div class="feature-box">
+                <h3>Streamlined Documentation</h3>
+                <p>Facilitates accurate code assignment by providing a user-friendly interface for configuring CPT billing codes directly from your progress notes. The app emphasizes documentation accuracy to capture the true complexity of the services rendered**</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="about">
+        <h2>About US</h2>
+        <p>Welcome to goCPT, where the journey of revolutionizing the medical coding and billing landscape began with a single idea - to make mental health care more accessible to everyone.</p>
+        <p>Join us on this transformative journey as we continue to innovate and evolve, breaking down barriers and making mental health care accessible to all. Together, we can shape a future where healthcare providers are empowered, and quality mental health care knows no boundaries.</p>
+        <button class="signup-today" onclick="signup_fun()">Sign Up Today!</button>
+    </section>
+    
+    <section class="story">
+        <h2>Our Story</h2>
+        <div class="story-grid">
+            <div class="story-box">
+                <h3>Our Mission</h3>
+                <p>At goCPT, our mission is simple yet profound - to empower mental health professionals and remove the barriers that hinder them from providing quality care and pursuing their dreams of private practice. We believe that every individual should have access to exceptional mental health care, and that starts with simplifying the coding and billing process.</p>
+            </div>
+            <div class="story-box">
+                <h3>Our Vision</h3>
+                <p>We envision a future where mental health care is more accessible, where providers can focus on what they do best - helping individuals on their path to wellness. By harnessing the power of technology, we aim to streamline the complexities of CPT coding, enabling providers to dedicate more time to patient care and less to administrative burdens.</p>
+            </div>
+        </div>
+    </section>
+</body>
+<script>
+ function login_fun() {
+            window.location.href = "./login.html";
+        }
+
+ function signup_fun() {
+            window.location.href = "./signup.html";
+        }
+        function startTesting(){
+            alert("Start Testing Button")
+        }
+</script>
+</html>
